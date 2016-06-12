@@ -1,186 +1,163 @@
 @font-face {
-    font-family: 'spicy_riceregular';
-    src: url('spicyrice-regular-webfont.woff2') format('woff2'),
-         url('spicyrice-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'spicy_riceregular';
+  src: url('spicyrice-regular-webfont.woff2') format('woff2'), url('spicyrice-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
-
 @font-face {
-    font-family: 'risqueregular';
-    src: url('risque-regular-webfont.woff2') format('woff2'),
-         url('risque-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'risqueregular';
+  src: url('risque-regular-webfont.woff2') format('woff2'), url('risque-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
-
 @font-face {
-    font-family: 'snigletextrabold';
-    src: url('sniglet-extrabold-webfont.woff2') format('woff2'),
-         url('sniglet-extrabold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'snigletextrabold';
+  src: url('sniglet-extrabold-webfont.woff2') format('woff2'), url('sniglet-extrabold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
-
 @font-face {
-    font-family: 'snigletregular';
-    src: url('sniglet-regular-webfont.woff2') format('woff2'),
-         url('sniglet-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+  font-family: 'snigletregular';
+  src: url('sniglet-regular-webfont.woff2') format('woff2'), url('sniglet-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
-
-body{
+body {
   background-color: #D6541C;
   padding: 0% 0%;
   margin-top: 0%;
   top: 0px;
 }
-
 html, body {
-    max-width: 100%;
-    overflow-x: hidden;
+  max-width: 100%;
+  overflow-x: hidden;
 }
-
-.main-header{
-    background-color: #00AEEF;
-    font-family: "risqueregular";
-    color: #fff;
-    padding: 2% 0%;
+.main-header {
+  background-color: #00AEEF;
+  font-family: "risqueregular";
+  color: #fff;
+  padding: 2% 0%;
 }
-
 #cartoon-cookie {
-    margin-left: 77%;
+  margin-left: 77%;
 }
-
-#cartoon-cookie :hover {
-    transform: perspective( 300px ) rotateY( 30deg ) rotateX( 45deg );
-    cursor: default;
-    width: 1.2;
-    z-index: 3;
-    ease: 1.2;
-]}
-
-.main-header h1{
+#cartoon-cookie:hover {
+  transform: perspective( 300px) rotateY( 30deg) rotateX( 45deg);
+  cursor: default;
+  width: 1.2;
+  z-index: 3;
+  ease: 1.2;
+  ]
+}
+.main-header h1 {
   margin-left: 7%;
-  font-size:85px;
+  font-size: 85px;
 }
-
-.main-content{
+.main-content {
   padding: 1% 1%;
-  margin-top:4%;
+  margin-top: 4%;
   margin-bottom: 4%;
-  margin-left:2%;
+  margin-left: 2%;
   background-color: #FFC000;
   font-family: "snigletregular";
   font-size: 22px;
 }
-.main-content1{
-  padding: 1% 1%;
-  margin-top:4%;
+.main-content1 {
+  color: #000;
+  padding: 4% 1%;
+  margin-top: 4%;
   margin-bottom: 4%;
-  margin-left:2%;
+  margin-left: 2%;
   font-family: "snigletregular";
   font-size: 22px;
 }
-
 .menu-wrap {
-  position:fixed;
-  top:0;
-  left:0px;
-  bottom:0;
-  width:100px;
-  background:#CCBDD6;
-  cursor:pointer;
-  z-index:50;
+  position: fixed;
+  top: 0;
+  left: 0px;
+  bottom: 0;
+  width: 100px;
+  background: #CCBDD6;
+  cursor: pointer;
+  z-index: 50;
 }
-
 .menu-bar {
-  position:absolute;
-  top:15px;
-  left:25px;
-  width:50px;
+  position: absolute;
+  top: 15px;
+  left: 25px;
+  width: 50px;
 }
 .menu-bar span {
-  position:absolute;
+  position: absolute;
   padding-top: 10px;
   left: -13px;
-  top:35px;
-  color:#222;
-  font-size:0.85em;
+  top: 35px;
+  color: #222;
+  font-size: 0.85em;
   font-family: "snigletregular";
   font-size: 120%;
 }
-
 .menu-bar div {
-  position:absolute;
-  height:4px;
-  width:40px;
-  background:#222;
+  position: absolute;
+  height: 4px;
+  width: 40px;
+  background: #222;
 }
 .menu1 {
-  top:5px;
+  top: 5px;
 }
 .menu2 {
-  top:16px;
+  top: 16px;
 }
 .menu3 {
-  top:27px;
+  top: 27px;
 }
-
 .menu-wrap:hover {
-  background:#DA0069;
-  width:100px;
+  background: #DA0069;
+  width: 100px;
 }
-
 .menu-wrap:hover .menu-bar {
-  left:15px;
+  left: 15px;
 }
-
- .educational-aside{
+.educational-aside {
   font-family: "snigletregular";
   font-size: 120%;
   color: #fff;
   padding: 1% 1%;
 }
-
 .nav-open nav {
-  left:0;
+  left: 0;
 }
-
-
 .nav-open .container {
-  transform:scale(0.98);
+  transform: scale(0.98);
 }
-
 nav {
-  position:fixed;
-  padding:1em;
-  left:-100%;
-  background:#00C449;
-  color:#fff;
-  width:320px;
+  position: fixed;
+  padding: 1em;
+  left: -100%;
+  background: #00C449;
+  color: #fff;
+  width: 320px;
   height: 130%;
-  top:0;
-  bottom:0;
-  z-index:60;
+  top: 0;
+  bottom: 0;
+  z-index: 60;
 }
-
-
-.btn-changes{
+.btn-changes {
   font-size: 32px;
   padding: 1% 1%;
   margin: 2% 1%;
   text-align: center;
 }
-
-.main-buttons{
+.main-buttons {
   text-align: center;
   margin-bottom: 2%;
 }
-
-.summary-content{
+.summary-content {
   text-align: center;
   margin-left: 10%;
+}
+
+.fa-play-circle-o{
+  color: #000;
 }
