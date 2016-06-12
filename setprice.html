@@ -60,27 +60,27 @@
     </div>
 
     <div class="main-content col-md-6">
-      <h2>Buy your first batch of cookies!</h2>
+      <div class="row">
 
+      <h2 class="col-md-8 col-md-offset-2">Buy your first batch of cookies!</h2>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+      <button id="batchNumMinus">-</button>
+      <span class="batchNum">1</span>
+      <button id="batchNumPlus">+</button>
+      <button class="batchBtn">BatchBtn</button>
+      <div class="batchError"></div>
+    </div>
 
-        What price do you want to make each cookie?
-        <br>
-        <input type="text" id="priceNum">
-        <br> How many cookie ingredients do you want to buy?
-        (1 ingredient = 24 cookies) BATCH NUM
-        <br>
-        <input type="text" id="batchNum">
-        <br />
-        cookies
-        <!-- < type="submit" value="Submit" id="cookie2"> -->
-    <button id="cookie2">Cookie2</button>
-
-      <div class="priceEror">WOOPEE</div>
-      <button id="sellBtn"></button>
-
-
-      <!-- <h3>You spent <span class="priceNum"></span> and bought <span class="batchNum"></span> cookies</h3>
-      <button class="sellBtn"></button> -->
+    <div class="col-md-6">
+    <button id="priceNumMinus">-</button>
+    $<span class="priceNum">1</span>.00
+    <button id="priceNumPlus">+</button>
+    <button class="priceBtn">PriceBtn</button>
+    <div class="priceEror"></div>
+  </div>
+    </div>
       <div>
         <img src="images/cookiesmall.png" />
         <img src="images/eggsmall.png" />
