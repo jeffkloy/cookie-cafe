@@ -13,17 +13,7 @@
       }
     </style>
     <script src="https://js.arcgis.com/3.16/"></script>
-    <script>
-      var map;
-
-      require(["esri/symbols/PictureMarkerSymbol", "esri/map", "dojo/domReady!"], function(PictureMarkerSymbol, Map) {
-        map = new Map("map", {
-          basemap: "streets-navigation-vector",  //For full list of pre-defined basemaps, navigate to http://arcg.is/1JVo6Wd
-          center: [-122.45, 37.75], // longitude, latitude
-          zoom: 17
-        });
-      });
-    </script>
+    <script src="scripts/arcmap.js" type="text/javascript"></script>
   </head>
 
   <body>
