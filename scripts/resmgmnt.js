@@ -1,8 +1,15 @@
-var money = 20, numOfCookies = 0, price = 1, batchPrice = 20;
+var money = 20, numOfCookies = 0, price = 1, batchPrice = 20, profit = 0, revenue = 0, cookiesLeft = 0, moneySpent = 0,
+customerSatisfaction = 0;
 
 function buyBatch(num){
-	money -= num*batchPrice;
+	if(num*batchPrice > money){
+		$(".batchError").text("Woah! You don't have enough money to buy that many.");
+	}else{
+		money -= num*batchPrice;
+	}
+
 	numOfCookies *= num*24;
+	moneySpent += num*batchPrice;
 }
 
 function setPrice(val){
@@ -17,17 +24,36 @@ function setPrice(val){
 
 }
 
+function sellCookies(){
+	if(price === 4){
+		cookiesLeft += numOfCookies - Math.ceil(numOfCookies * 0.50);
+	}
+	if(price === 3){
+		cookiesLeft += numOfCookies - Math.ceil(numOfCookies * 0.75);
+	}
+	if(price > 2){
+		cookiesLeft += 0;
+	}
+	getProfit(numOfCookies - cookiesLeft);
+}
+
+
+function getProfit(sold){
+	revenue = (numOfCookies-cookiesLeft)*price;
+	profit = revenue - moneySpent;
+}
+
 
 $(document).ready(function(){
 
+	$(".playBtn").load("");
+
 	$(".sellBtn").disabled = true;
-	buyBatch((".batchNum").text());
-	setPrice((".priceNum").text());
-	if (price > 4 && price < 1){
+	$(".batchBtn").click(buyBatch((".batchNum").text()));
+	$(".priceBtn").click(setPrice((".priceNum").text()));
+	if (price < 4 && price > 1){
 		$(".sellBtn").disabled = false;
 	}
 	$(".sellBtn").load("");
-
-	
 
 });
