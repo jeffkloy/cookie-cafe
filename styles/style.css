@@ -161,3 +161,7 @@ nav {
 .fa-play-circle-o{
   color: #000;
 }
+
+#map{
+  height: 50%;
+}
