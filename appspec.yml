@@ -1,10 +1,10 @@
-version: 0.1
+version: 0.0
 os: linux
 files:
   - source: /
     destination: /var/www/html
 permissions:
-  - /var/www/html
+  - object: /var/www/html
     owner: apache
     group: apache
 
