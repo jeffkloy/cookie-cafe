@@ -51,8 +51,13 @@ function sellCookies() {
   $("#profit").text(profit);
   $("#cookiesLeft").text(cookiesLeft);
   $("#customerSatisfaction").text(customerSatisfaction);
-  $(".summary-content").show();
+  $(".animation-page").show();
   $(".user-settings").hide();
+}
+
+function showSummaryPage(){
+	$(".animation-page").hide();
+	$(".summary-content").show();
 }
 
 
@@ -125,8 +130,11 @@ $(document).ready(function() {
   if (price < 4 && price > 1) {
     $(".sellBtn").disabled = false;
   }
+	$("#show-results").click(function() {
+		showSummaryPage();
+	});
+	
   $(".sellBtn").load("");
-
   $(".summary-content").hide();
-
+	$(".animation-page").hide();
 });
