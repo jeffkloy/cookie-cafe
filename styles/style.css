@@ -1,0 +1,149 @@
+@font-face {
+    font-family: 'spicy_riceregular';
+    src: url('spicyrice-regular-webfont.woff2') format('woff2'),
+         url('spicyrice-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'risqueregular';
+    src: url('risque-regular-webfont.woff2') format('woff2'),
+         url('risque-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'snigletextrabold';
+    src: url('sniglet-extrabold-webfont.woff2') format('woff2'),
+         url('sniglet-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'snigletregular';
+    src: url('sniglet-regular-webfont.woff2') format('woff2'),
+         url('sniglet-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+  background-color: #D6541C;
+}
+
+.main-header{
+    background-color: #00AEEF;
+    font-family: "risqueregular";
+    color: #fff;
+    padding: 2% 0%;
+}
+
+#cartoon-cookie {
+    margin-left: 77%;
+}
+
+.main-header h1{
+  margin-left: 7%;
+  font-size:85px;
+}
+
+.main-content{
+  padding: 1% 1%;
+  margin-top:4%;
+  margin-left:2%;
+  background-color: #FFC000;
+}
+
+.menu-wrap {
+  position:fixed;
+  top:0;
+  left:0px;
+  bottom:0;
+  width:100px;
+  background:#CCBDD6;
+  cursor:pointer;
+  z-index:50;
+}
+
+.menu-bar {
+  position:absolute;
+  top:15px;
+  left:25px;
+  width:50px;
+}
+.menu-bar span {
+  position:absolute;
+  padding-top: 10px;
+  left: -13px;
+  top:35px;
+  color:#222;
+  font-size:0.85em;
+  font-family: "snigletregular";
+  font-size: 120%;
+}
+
+.menu-bar div {
+  position:absolute;
+  height:4px;
+  width:40px;
+  background:#222;
+}
+.menu1 {
+  top:5px;
+}
+.menu2 {
+  top:16px;
+}
+.menu3 {
+  top:27px;
+}
+
+.menu-wrap:hover {
+  background:#DA0069;
+  width:100px;
+}
+
+.menu-wrap:hover .menu-bar {
+  left:15px;
+}
+
+ .educational-aside{
+  font-family: "snigletregular";
+  font-size: 120%;
+  color: #fff;
+}
+
+.nav-open nav {
+  left:0;
+}
+
+.nav-open .main {
+  margin-left:0;
+}
+
+
+.nav-open .container {
+  transform:scale(0.98);
+}
+
+nav {
+  position:fixed;
+  padding:1em;
+  left:-100%;
+  background:#00C449;
+  color:#fff;
+  width:320px;
+  top:0;
+  bottom:0;
+  z-index:60;
+}
+
+nav ul {
+  margin:0;
+  padding:0;
+  list-style:none;
+}
