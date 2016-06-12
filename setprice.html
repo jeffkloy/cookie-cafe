@@ -30,7 +30,7 @@
       <div class="row">
         <div class="col-md-4">
 
-          <img src="images/logo-cookiesmall.png" id="cartoon-cookie" />
+          <a href="#" id="cartoon-cookie"><img src="images/logo-cookiesmall.png" /></a>
         </div>
         <h1 class="col-md-6">Popup Cookie Cafe</h1>
       </div>
@@ -41,7 +41,7 @@
     <!-- SIDE FINANCES BAR -->
 
     <div class="col-md-4">
-      <div class="menu-wrap">
+      <div class="menu-wrap pull-left">
         <div class="menu-bar">
           <div class="menu1"></div>
           <div class="menu2"></div>
@@ -49,38 +49,78 @@
           <span>FINANCES</span>
         </div>
       </div>
-      <nav>
-        <p class="educational-aside">
-          Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up
-          one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus
-          Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from
-          a line in section 1.10.32.
+      <nav class="educational-aside">
+        <h2>Market Value</h2>
+        <p>
+          The "Market Value" of a thing is the price that somebody would pay for that thing in a competitive economy.
+        </p>
+        <p>
+          If the average cost of cookies of your competitors is $3.00, then $3.00 is the current market value.
+        </p>
+        <h2>Does Market Value change?</h2>
+        <p>
+          Yes! It changes according to how valueable the product is. Let's say, there was a crazy insect infestation that made all of the cocoa trees sick, therefore making chocolate hard to produce since there would be no cocoa to work with. This makes chocolate
+          chip cookies more valuable because it's harder to purchase chocolate in general, and thus the market value has increased.
         </p>
       </nav>
     </div>
 
     <div class="main-content col-md-6">
-      <div class="row">
+      <div class="user-settings">
 
-      <h2 class="col-md-8 col-md-offset-2">Buy your first batch of cookies!</h2>
-    </div>
-    <div class="row">
-      <div class="col-md-6">
-      <button id="batchNumMinus">-</button>
-      <span class="batchNum">1</span>
-      <button id="batchNumPlus">+</button>
-      <button class="batchBtn">BatchBtn</button>
-      <div class="batchError"></div>
-    </div>
+        <div class="row">
+          <h1 class="text-center">You have $20.00</h1>
+        </div>
+        <div class="row">
+          <h2 class="text-center">Buy your first batch of cookies!</h2>
+        </div>
+        <div class="row">
+          <div class="col-md-6 main-buttons">
+            <h3>Set how many batches of cookies you want to sell.</h3>
+            <h3>(1 Batch = 24 Cookies = $20.00)</h3>
+            <button class="btn-changes btn-danger" id="batchNumMinus">-</button>
+            <span class="btn-changes batchNum">1</span>
+            <button class="btn-changes btn-success" id="batchNumPlus">+</button>
+            </br>
+            <button class="btn-changes batchBtn btn-info">Qty Check</button>
+            <div class="btn-changes batchError"></div>
+          </div>
 
-    <div class="col-md-6">
-    <button id="priceNumMinus">-</button>
-    $<span class="priceNum">1</span>.00
-    <button id="priceNumPlus">+</button>
-    <button class="priceBtn">PriceBtn</button>
-    <div class="priceEror"></div>
-  </div>
-    </div>
+          <div class="col-md-6 main-buttons">
+            <h3>Set the price of each cookie you'll sell.</h3>
+            <h3>(Remember Market Value!)</h3>
+            <button class="btn-changes  btn-danger" id="priceNumMinus">-</button>
+            <span class="btn-changes">
+          $<span class="priceNum">1</span>.00</span>
+            <button class="btn-changes  btn-success" id="priceNumPlus">+</button>
+            </br>
+            <button class="btn-changes  priceBtn btn-info">Price Check</button>
+            <div class="btn-changes  priceEror"></div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12 main-buttons">
+              <a href="#" id="save-summary-info" class="btn btn-lg btn-default"><h1>Sell Your Cookies!</h1></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+
+      <div class="col-md-10 col-offset-6 summary-content">
+
+
+        <h1 class="text-align">Financial Record:</h1>
+        <h3 class="text-danger text-align">Cost:</h3> <span id="moneySpent"></span>
+        <h3 class="text-success text-align">Revenue:</h3> <span id="revenue"></span>
+        <h2 class="text-success text-align">Profit:</h2> <span id="profit"></span>
+        <h1 class="text-align">Customer Record:</h1>
+        <h3 class="text-primary text-align">Left over cookies:</h3> <span id="cookiesLeft"></span>
+        <h3 class="text-primary text-align">Customer Satisfaction:</h3> <span id="customerSatisfaction"></span>
+
+      </div>
+      <!--  -->
+
       <div>
         <img src="images/cookiesmall.png" />
         <img src="images/eggsmall.png" />
@@ -88,8 +128,8 @@
         <img src="images/mainchocolatebar.png" />
         <img src="images/sugar.png" />
         <img src="images/butter.png" />
-
       </div>
     </div>
+
   </div>
 </body>

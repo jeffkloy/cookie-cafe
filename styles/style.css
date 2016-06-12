@@ -33,6 +33,14 @@
 
 body{
   background-color: #D6541C;
+  padding: 0% 0%;
+  margin-top: 0%;
+  top: 0px;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 .main-header{
@@ -46,6 +54,14 @@ body{
     margin-left: 77%;
 }
 
+#cartoon-cookie :hover {
+    transform: perspective( 300px ) rotateY( 30deg ) rotateX( 45deg );
+    cursor: default;
+    width: 1.2;
+    z-index: 3;
+    ease: 1.2;
+]}
+
 .main-header h1{
   margin-left: 7%;
   font-size:85px;
@@ -54,8 +70,11 @@ body{
 .main-content{
   padding: 1% 1%;
   margin-top:4%;
+  margin-bottom: 4%;
   margin-left:2%;
   background-color: #FFC000;
+  font-family: "snigletregular";
+  font-size: 22px;
 }
 
 .menu-wrap {
@@ -115,14 +134,11 @@ body{
   font-family: "snigletregular";
   font-size: 120%;
   color: #fff;
+  padding: 1% 1%;
 }
 
 .nav-open nav {
   left:0;
-}
-
-.nav-open .main {
-  margin-left:0;
 }
 
 
@@ -137,13 +153,26 @@ nav {
   background:#00C449;
   color:#fff;
   width:320px;
+  height: 130%;
   top:0;
   bottom:0;
   z-index:60;
 }
 
-nav ul {
-  margin:0;
-  padding:0;
-  list-style:none;
+
+.btn-changes{
+  font-size: 32px;
+  padding: 1% 1%;
+  margin: 2% 1%;
+  text-align: center;
+}
+
+.main-buttons{
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+.summary-content{
+  text-align: center;
+  margin-left: 10%;
 }
