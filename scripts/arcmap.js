@@ -1,14 +1,44 @@
-var map, pictureMarkerSymbol;
-
-require(["esri/symbols/PictureMarkerSymbol", "esri/graphic", "esri/map", "dojo/domReady!"], function(Map, PictureMarkerSymbol) {
-    map = new Map("map", {
-        basemap: "streets-navigation-vector",
-        center: [-122.45, 37.75], // longitude, latitude
-        zoom: 17
+var map;
+var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+var labelIndex = 0;
+var pnt1,pnt2;
+​
+function initMap() {
+    map = new google.maps.Map(document.getElementById('map'), {
+      center: {lat: 34.0599, lng: -118.3103},
+      zoom: 18
     });
-
-    pictureMarkerSymbol = new PictureMarkerSymbol("/images/cookie.png", 25, 25);
-    var graphic = new Graphic(evt.geometry, pictureMarkerSymbol);
-    map.graphics.add(graphic);
-    
-});
+    pnt1 = map.getCenter();
+​
+    var trafficLayer = new google.maps.TrafficLayer();
+  	trafficLayer.setMap(map);
+​
+    if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(function(position) {
+      var pos = {
+        lat: position.coords.latitude,
+        lng: position.coords.longitude
+      };
+​
+      map.setCenter(pos);
+    });
+  }
+​
+  google.maps.event.addListener(map, 'click', function(event) {
+    addMarker(event.latLng, map);
+    pnt2 = event.latLng;
+  });
+​
+  addMarker(map.getCenter(), map);
+​
+  // Adds a marker to the map.
+function addMarker(location, map) {
+  // Add the marker at the clicked location, and add the next-available label
+  // from the array of alphabetical characters.
+  var marker = new google.maps.Marker({
+    position: location,
+    label: labels[labelIndex++ % labels.length],
+    map: map
+  });
+}
+}

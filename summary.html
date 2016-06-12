@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+  <!-- Latest compiled JavaScript -->
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
+  <script src="scripts/side-menu-toggle.js"></script>
+  <script src="scripts/resmgmnt.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles/style.css" />
+
+
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+  <title>Popup Cookie Cafe</title>
+</head>
+
+<body>
+  <div class="main-header row">
+    <div class="col-md-12">
+      <div class="row">
+        <div class="col-md-4">
+
+          <a href="#" id="cartoon-cookie"><img src="images/logo-cookiesmall.png" /></a>
+        </div>
+        <h1 class="col-md-6">Popup Cookie Cafe</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <!-- SIDE FINANCES BAR -->
+
+    <div class="col-md-4">
+      <div class="menu-wrap pull-left">
+        <div class="menu-bar">
+          <div class="menu1"></div>
+          <div class="menu2"></div>
+          <div class="menu3"></div>
+          <span>FINANCES</span>
+        </div>
+      </div>
+      <nav class="educational-aside">
+        <h2>Market Value</h2>
+        <p>
+          The "Market Value" of a thing is the price that somebody would pay for that thing in a competitive economy.
+        </p>
+        <p>
+           If the average cost of cookies of your competitors is $3.00, then $3.00 is the current market value.
+        </p>
+        <h2>Does Market Value change?</h2>
+        <p>
+          Yes! It changes according to how valueable the product is. Let's say, there was a crazy insect infestation that made all of the cocoa trees sick, therefore making chocolate hard to produce since there would be no cocoa to work with. This makes chocolate chip cookies more valuable because it's harder to purchase chocolate in general, and thus the market value has increased.
+        </p>
+      </nav>
+    </div>
+
+    <div class="main-content col-md-6 col-offset-6">
+      <div id="summary-div" class="row">
+        <button id="#results">See Results</button>
+        <div class="col-md-10 col-offset-6 summary-content">
+
+      <h1 class="text-align">Financial Record:</h1>
+      <h3 class="text-danger text-align">Cost:</h3> <span id="moneySpent"></span>
+      <h3 class="text-success text-align">Revenue:</h3> <span id="revenue"></span>
+      <h2 class="text-success text-align">Profit:</h2> <span id="profit"></span>
+      <h1 class="text-align">Customer Record:</h1>
+      <h3 class="text-primary text-align">Left over cookies:</h3> <span id="cookiesLeft"></span>
+      <h3 class="text-primary text-align">Customer Satisfaction:</h3> <span id="customerSatisfaction"></span>
+
+    </div>
+      </div>
+      <div>
+        <img src="images/cookiesmall.png" />
+        <img src="images/eggsmall.png" />
+        <img src="images/floursmall.png" />
+        <img src="images/mainchocolatebar.png" />
+        <img src="images/sugar.png" />
+        <img src="images/butter.png" />
+      </div>
+    </div>
+
+  </div>
+</body>
